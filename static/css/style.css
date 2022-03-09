@@ -1,9 +1,8 @@
 * {
   font-family: "Noto Sans KR", sans-serif;
-  font-weight: 400;
+  font-weight: 500;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 *::-webkit-scrollbar {
@@ -26,13 +25,6 @@ a {
 body {
   width: 100%;
 }
-.clearFix,
-.clearFix::after,
-.clearFix::before {
-  display: block;
-  content: "";
-  clear: both;
-}
 
 button {
   border: none;
@@ -44,7 +36,149 @@ button:focus {
   outline: none;
 }
 
+/*뒷배경*/
+.backImg {
+  width: 100%;
+  height: 100vh;
+  background-color: #539ddb;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: fixed;
+  top: 0;
+  z-index: -3;
+  opacity: 0.6;
+}
+
+/*header*/
+header {
+  width: 100%;
+  height: 6rem;
+  display: flex;
+  justify-content: center;
+}
+
+header > section {
+  width: 98%;
+  height: 6rem;
+  display: flex;
+  position: fixed;
+  z-index: 2;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.headerLogo {
+  width: 200px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 5%;
+}
+.headerLogo > a > img {
+  height: 60px;
+  width: 125px;
+}
+
+.headerInfo {
+  width: 15%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.infoBox {
+  width: 70px;
+  height: 70px;
+  background-image: url("../images/basic_profile_img.png");
+  border-radius: 100%;
+  background-position: center;
+  background-size: cover;
+}
+/* toggleBtn*/
+.listingContainer {
+  width: 50%;
+  height: 20vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 50px auto 0px auto;
+  color: #084a83;
+}
+
+.listingBox_neck {
+  width: 110px;
+  height: 110px;
+  border-radius: 100%;
+  background-color: rgba(256, 256, 256, 0.3);
+  background-image: url("../images/wrist.png");
+  background-position: center;
+  background-size: cover;
+  opacity: 0.7;
+  transition: all 0.2s ease-in-out;
+  color: transparent;
+  border: 2px solid #5280a8;
+}
+
+.listingBox_waist {
+  width: 110px;
+  height: 110px;
+  border-radius: 100%;
+  background-color: rgba(256, 256, 256, 0.3);
+  background-image: url("../images/pain.png");
+  background-position: center;
+  background-size: cover;
+  opacity: 0.7;
+  transition: all 0.2s ease-in-out;
+  color: transparent;
+  border: 2px solid #5280a8;
+}
+
+.listingBox_wrist {
+  width: 110px;
+  height: 110px;
+  border-radius: 100%;
+  background-color: rgba(256, 256, 256, 0.3);
+  background-image: url("../images/injury.png");
+  background-position: center;
+  background-size: cover;
+  opacity: 0.7;
+  transition: all 0.2s ease-in-out;
+  color: transparent;
+  border: 2px solid #5280a8;
+}
+
+.listingBox_lowerBody {
+  width: 110px;
+  height: 110px;
+  border-radius: 100%;
+  background-color: rgba(256, 256, 256, 0.3);
+  background-image: url("../images/knee.png");
+  background-position: center;
+  background-size: cover;
+  opacity: 0.7;
+  transition: all 0.2s ease-in-out;
+  color: transparent;
+  border: 2px solid #5280a8;
+}
+.listingBox_waist:hover,
+.listingBox_wrist:hover,
+.listingBox_lowerBody:hover,
+.listingBox_neck:hover {
+  transform: scale(1.05);
+  color: black;
+  font-size: 20px;
+  font-weight: 700;
+  border: 1px solid red;
+}
+
 /* thumbnail */
+#thumbnail-box {
+  width: 90%;
+  margin: 0 auto;
+}
 .thumbnail {
   text-align: left;
   transition: all 0.2s ease-in-out;
@@ -52,9 +186,151 @@ button:focus {
 .thumbnail:hover {
   transform: scale(1.05);
 }
+
 .thunmbnail__title {
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
   width: 100%;
+}
+
+/*detailBox*/
+.detailBox {
+  display: none;
+  width: 200px;
+  height: 300px;
+  background-color: rgba(256, 256, 256, 0.7);
+  position: fixed;
+  top: 6rem;
+  right: 1%;
+  z-index: 30;
+  opacity: 0.95;
+  overflow: hidden;
+
+  border-radius: 10px;
+}
+
+#profile_container {
+  width: 200px;
+  height: 75px;
+  display: flex;
+  align-items: center;
+}
+
+#profile_box2 {
+  width: 70px;
+  height: 70px;
+  border-radius: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  margin: 0 10px 0 10px;
+}
+
+.nickName > span {
+  color: #205b8f;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+#edit_container {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.editLogout,
+.editFavorite,
+.editPassword {
+  width: 100%;
+  margin: 0 10px 0 10px;
+  display: flex;
+}
+
+svg {
+  width: 25px;
+  height: 25px;
+}
+
+/*modal*/
+.comment-icon {
+  margin: 0 10px;
+}
+
+.write-comment {
+  display: none;
+  position: relative;
+  height: 100px;
+}
+
+.write-comment > textarea {
+  position: relative;
+  width: 100%;
+  padding-right: 50px;
+  height: 100px;
+  border-radius: 5px;
+}
+
+.write-comment > button {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  border: 0px solid #000;
+  border-radius: 30px;
+  background-color: #dc6161;
+  color: #fefefe;
+  display: flex;
+  align-items: center;
+}
+
+.comment-list {
+  width: 100%;
+}
+
+.comm-one > p {
+  margin-left: 10px;
+}
+
+.comm-one {
+  position: relative;
+  margin: 0 auto;
+}
+
+.comm-one > i {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#heart {
+  color: red;
+}
+
+/*footer*/
+footer {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer_overview {
+  color: #205b8f;
+  text-align: center;
+  font-size: 12px;
+}
+.container {
+  background-color: white;
+  border-radius: 15px;
+  padding: 20px 0px;
+  /*box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;*/
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px,
+    rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
 }
