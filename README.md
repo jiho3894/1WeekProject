@@ -22,12 +22,9 @@
 
 <h3> 1주일 100시간 코딩하느라 거북목에 허리통증까지... 안아픈곳이 없는 개발자들
 부위별 스트레칭 영상을 따라하면서 뭉쳐있는 근육을 풀어보세요</h3>
-<a href="홈페이지 링크"><h1>🏠HomePage</h1></a>
+<h1><a href="http://bong7233.shop/">🏠HomePage</a></h1>
 <br/>
-
-<h2>📅 제작 기간 : ( 2022.03.07~ 2022.03.10 )</h2>
-<br/>
-<h1>🧚🏼‍♀️ 팀원 소개</h1>
+<h1>🧚🏼‍♀️ 팀원 소개 제작 기간 : ( 2022.03.07~ 2022.03.10 )</h1>
 
 <table>
     <tr>
@@ -49,9 +46,9 @@
     <tr>
         <td width="25%" align="center"><strong>로그인 + 회원가입 기능 구현</strong>
         </td>
-        <td width="25%" align="center"><strong>회원수정 + 즐겨찾기 기능 구현</strong>
+        <td width="25%" align="center"><strong>회원정보수정 + 즐겨찾기 기능 구현</strong>
         </td>
-        <td width="25%" align="center"><strong>좋아요 + 댓글 기능 구현 / 이미지 제작 / 디자인</strong>
+        <td width="25%" align="center"><strong>좋아요 + 댓글 기능 구현 / 로고 및 이미지 파일수집 / 디자인</strong>
         </td>
         <td width="25%" align="center"><strong>페이지 레이아웃 구성 + 프론트 엔드 작업 </strong>
         </td>
@@ -60,7 +57,7 @@
 
 <h2> 📷 시연 영상 </h2>
 
-[![시연 영상](이미지)](https://www.youtube.com/watch?v=GvtbNAqW754)
+[![시연 영상](https://user-images.githubusercontent.com/79081800/157608296-6c7292eb-4350-4e30-8f49-94f6cd10f35a.jpg)](https://youtu.be/LPQ9zmt3zGA)
 
 <h2> ✒ 디자인 초안 <a href="https://www.figma.com/file/8FhvG6t6EQMniAwGXoSoWS/%EC%8B%9C%EC%9B%90%ED%95%98%EA%B2%8C~!?node-id=0%3A1">보러가기</a></h2>
 
